@@ -6,7 +6,6 @@ zsh plugin for loading my personal zsh custom functions
 
 - [zsh-custom-functions](#zsh-custom-functions)
   - [Usage](#usage)
-  - [Updating custom-functions](#updating-custom-functions)
   - [License](#license)
 
 ## Usage
