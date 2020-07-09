@@ -81,3 +81,6 @@ infos() {
   echo
 }
 
+### Custom Alias
+alias l.='ls -d .*'
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
