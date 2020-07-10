@@ -81,6 +81,23 @@ infos() {
   echo
 }
 
+
+### Functions (Git) ###
+gitStoreCredentials() {
+  git config credential.helper store
+}
+
+initLocalGitConfig() {
+  if (( $# != 2 ))
+    then
+      echoArg "Usage:  $0 [GitUserName] [GitUserPassword]"
+  else
+      git config user.name $1 ; git config user.email $2;
+  fi
+}
+
+
 ### Custom Alias
 alias l.='ls -d .*'
+alias lsd='ls -l | grep "^d"'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
