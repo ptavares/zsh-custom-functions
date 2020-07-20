@@ -1,5 +1,7 @@
 # zsh-custom-functions
 
+![GitHub](https://img.shields.io/github/license/ptavares/zsh-custom-functions)
+
 zsh plugin for loading my personal zsh custom functions
 
 ## Table of content
