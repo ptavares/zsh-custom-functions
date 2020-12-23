@@ -25,7 +25,7 @@ n() { nautilus ; }                                 # n            : Opens a Naut
 c() { clear ; }                                    # c            : Clear terminal display
 path() { echo -e ${PATH//:/\\n} ; }                # path         : Echo all executable Paths
 show_options() { shopt ; }                         # Show_options : Display bash options settings
-# ducks() { du -cksh * | sort -hr | head -n 15}      # ducks        : List by size directories
+ducks() { du -cksh * | sort -hr | head -n 15}      # ducks        : List by size directories
 mkdirCd() {                                        # mkdirCd      : Makes new Dir and jumps inside
     if (( $# != 1 ))
       then
@@ -98,6 +98,6 @@ initLocalGitConfig() {
 
 
 ### Custom Alias
-alias l.='ls -d .*'
-alias lsd='ls -l | grep "^d"'
-alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
+alias l.='/usr/bin/ls -d .*'
+alias lsd='/usr/bin/ls -l | grep "^d"'
+alias lr='/usr/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
