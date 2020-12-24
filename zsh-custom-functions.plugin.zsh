@@ -90,7 +90,7 @@ gitStoreCredentials() {
 initLocalGitConfig() {
   if (( $# != 2 ))
     then
-      echoArg "Usage:  $0 [GitUserName] [GitUserPassword]"
+      echoArg "Usage:  $0 [GitUserName] [GitUserMail]"
   else
       git config user.name $1 ; git config user.email $2;
   fi
