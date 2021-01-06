@@ -35,7 +35,7 @@ mkdirCd() {                                        # mkdirCd      : Makes new Di
     fi
 }
 
-extract() {i                                       # extract      : Extract common arch files
+extract() {                                       # extract      : Extract common arch files
   if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xvjf $1       ;;
@@ -46,7 +46,7 @@ extract() {i                                       # extract      : Extract comm
       *.tar)       tar xvf $1        ;;
       *.tbz2)      tar xvjf $1       ;;
       *.tgz)       tar xvzf $1       ;;
-      *.zip)       unzip -v $1       ;;
+      *.zip)       unzip $1          ;;
       *.Z)         uncompress -v $1  ;;
       *.7z)        7z x $1           ;;
       *)     echo "'$1' cannot be extracted via extract()" ;;
@@ -83,7 +83,7 @@ infos() {
 
 
 ### Functions (Git) ###
-gitStoreCredentials() {
+initialGitStoreCredentials() {
   git config credential.helper store
 }
 
