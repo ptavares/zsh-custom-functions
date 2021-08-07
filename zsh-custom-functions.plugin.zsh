@@ -81,6 +81,10 @@ infos() {
   echo
 }
 
+### Functions (de/en)code ###
+gpg_decode () {
+  echo "$1" | base64 --decode | gpg
+}
 
 ### Functions (Git) ###
 initialGitStoreCredentials() {
