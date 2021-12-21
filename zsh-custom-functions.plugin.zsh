@@ -105,3 +105,9 @@ initLocalGitConfig() {
 alias l.='/usr/bin/ls -d .*'
 alias lsd='/usr/bin/ls -l | grep "^d"'
 alias lr='/usr/bin/ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
+
+### AWS alias
+alias aws_sts_gci='aws sts get-caller-identity | jq'
+alias aws_iam_laa='aws iam list-account-aliases | jq'
+
+
