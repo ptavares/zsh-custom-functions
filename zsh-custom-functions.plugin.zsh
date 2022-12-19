@@ -101,7 +101,7 @@ initLocalGitConfig() {
 }
 
 ### Function to (re)install Golang ###
-installGollang(){
+installGolang(){
    if (( $# != 1 ))
     then
       echoArg "Usage:  $0 GO_VERSION_TO_INSTALL"
