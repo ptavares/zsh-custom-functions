@@ -106,8 +106,7 @@ installGolang(){
     then
       echoArg "Usage:  $0 GO_VERSION_TO_INSTALL"
   else
-      wget -q -O - https://git.io/vQhTU | bash -s -- --remove && wget -q -O - https://git.io/vQhTU | bash -s --
- --version $1
+      wget -q -O - https://git.io/vQhTU | bash -s -- --remove && wget -q -O - https://git.io/vQhTU | bash -s -- --version $1
   fi
 }
 
