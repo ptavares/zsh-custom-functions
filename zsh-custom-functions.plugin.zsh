@@ -112,7 +112,7 @@ installGolang(){
 
 ### Function to synctime ###
 synctime(){
-  sudo hwclock
+  sudo hwclock -s
 }
 
 
