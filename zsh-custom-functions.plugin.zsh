@@ -110,6 +110,15 @@ installGolang(){
   fi
 }
 
+### Function to run a dbus session - needed to use keyring in wsl session ##
+init_dbus_session(){
+  if (( $# != 1 ))
+    then
+      echoArg "Usage:  $0 [bash|zsh]"
+  else
+      dbus-run-session -- $1
+}
+
 ### Function to synctime ###
 synctime(){
   sudo hwclock -s
