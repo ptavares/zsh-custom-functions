@@ -117,6 +117,7 @@ init_dbus_session(){
       echoArg "Usage:  $0 [bash|zsh]"
   else
       dbus-run-session -- $1
+  fi
 }
 
 ### Function to synctime ###
